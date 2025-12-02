@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="9.1.0" />
+    <PackageReference Include="itext7.bouncy-castle-adapter" Version="9.1.0" />
+    <PackageReference Include="swashbuckle.aspnetcore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\firmado\" />
+    <Folder Include="wwwroot\firmado\" />
+    <Folder Include="wwwroot\nofirmado\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Files.Dto\Files.Dto.csproj" />
+    <ProjectReference Include="..\Files.Services\Files.Services.csproj" />
+    <ProjectReference Include="..\Files.Entities\Files.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
